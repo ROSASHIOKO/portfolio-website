@@ -23,9 +23,9 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 right-0 left-0 z-10 bg-[#1A202C] bg-opacity-100">
+    <nav className="relative top-auto right-0 left-0 z-auto bg-gray-500 bg-opacity-100">
       <div className="flex items-center justify-between px-4 py-2">
-        <Link href="/" className="text-2xl md:text-5xl text-white font-semibold">
+        <Link href="/" className="text-2xl md:text-5xl text-black font-semibold">
           LOGO
         </Link>
         <div className="mobile-menu block md:hidden">
