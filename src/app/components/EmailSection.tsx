@@ -43,11 +43,11 @@ const EmailSection = () => {
         <h2 className="text-3xl font-bold text-black mb-4">My Contacts</h2>
         <div className="mb-6">
           <h5 className="text-xl font-bold text-black my-2">Address</h5>
-          <p className="text-black">1234 Web Developer St., Nairobi, Kenya</p>
+          <p className="text-black">Mombasa,Kenya</p>
         </div>
         <div className="mb-6">
           <h5 className="text-xl font-bold text-black my-2">Phone</h5>
-          <p className="text-black">+254 700 000 000</p>
+          <p className="text-black">+254 751466088</p>
         </div>
         <div className="socials flex flex-row gap-4">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black">
