@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { FaCode, FaGraduationCap, FaBriefcase } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
@@ -34,7 +35,9 @@ const AboutSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 rounded-3xl">
         {/* Skills */}
         <div className="bg-gray-300 p-6 rounded-xl shadow-md">
-          <h3 className="text-2xl font-semibold mb-4">Skills</h3>
+          <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+            <FaCode /> Skills
+          </h3>
           <p className="mb-4">
             I have a wide range of skills that enable me to develop and maintain modern web applications. Some of the key skills include:
           </p>
@@ -52,12 +55,34 @@ const AboutSection = () => {
 
         {/* Education */}
         <div className="bg-gray-300 p-6 rounded-xl shadow-md">
-          <h3 className="text-2xl font-semibold mb-4">Education</h3>
+          <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+            <FaGraduationCap /> Education
+          </h3>
           <p>
             I am pursuing a Diploma in Information and Communication Technology, where I am gaining foundational knowledge in programming, algorithms, and data structures.
             I am also involved in various projects that enhance my skills and understanding of web development.
             I have also joined learning programmes with Cisco.
           </p>
+        </div>
+      </div>
+
+      {/* Experience Section */}
+      <div className="mt-10 flex justify-center">
+        <div className="bg-gray-300 p-6 rounded-xl shadow-md w-full md:w-2/3">
+          <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+            <FaBriefcase /> Experience
+          </h3>
+          <p>
+            I have worked on several web development projects, both independently and as part of a team.I have to shout out Swahilipot Hub as 60% of my experince i have gained it here in this organization. My experience includes:
+          </p>
+            <ul className="list-disc pl-6">
+            <li>Developing responsive websites using React and Next.js</li>
+            <li>Building RESTful APIs with Node.js and Express</li>
+            <li>Collaborating with designers and developers to create user-friendly interfaces</li>
+            <li>Participating in Agile development processes</li>
+            <li>Optimizing web applications for performance and scalability</li>
+            <li>Using various tech stacks to deliver end-to-end solutions</li>
+            </ul>
         </div>
       </div>
     </section>
