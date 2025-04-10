@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="bg-gray-700 text-black py-16 px-6 rounded-3xl mt-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center h-full rounded-3xl">
-        <div className="w-full h-full">
+        <div className="w-full h-full md:ml-4 md:w-5/6 md:h-5/6">
           {/* Image Section */}
           <div className="w-full h-full overflow-hidden rounded-3xl shadow-lg">
             <img

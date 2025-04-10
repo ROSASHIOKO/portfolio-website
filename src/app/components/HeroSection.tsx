@@ -53,12 +53,12 @@ const HeroSection = () => {
         </div>
 
         {/* Image Section */}
-        <div className="sm:col-span-6 px-4 sm:px-8 mb-8 sm:mb-0">
-          <div className="relative w-[250px] h-[250px] bg-gray-800 rounded-full shadow-xl mx-auto sm:ml-12 flex items-center justify-center">
+        <div className="sm:col-span-6 px-4 sm:px-8 mb-8 sm:mb-0 sm:ml-4">
+          <div className="relative w-[300px] h-[300px] bg-gray-800 rounded-full shadow-xl mx-auto sm:ml-12 flex items-center justify-center">
             <img
               src="/images/hero-image.png"
               alt="Rosa"
-              className="object-cover w-[90%] h-[90%] rounded-full"
+              className="object-cover w-[95%] h-[95%] rounded-full"
             />
           </div>
         </div>
