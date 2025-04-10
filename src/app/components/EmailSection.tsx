@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -43,11 +43,15 @@ const EmailSection = () => {
         <h2 className="text-3xl font-bold text-black mb-4">My Contacts</h2>
         <div className="mb-6">
           <h5 className="text-xl font-bold text-black my-2">Address</h5>
-          <p className="text-black">Mombasa,Kenya</p>
+          <p className="text-black flex items-center gap-2">
+            <FaMapMarkerAlt /> Mombasa, Kenya
+          </p>
         </div>
         <div className="mb-6">
           <h5 className="text-xl font-bold text-black my-2">Phone</h5>
-          <p className="text-black">+254 751466088</p>
+          <p className="text-black flex items-center gap-2">
+            <FaPhoneAlt /> +254 751466088
+          </p>
         </div>
         <div className="socials flex flex-row gap-4">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black">
