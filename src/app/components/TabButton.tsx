@@ -13,7 +13,7 @@ const  buttonClasses = active
 
 return (
    <button onClick={SelectTab}>
-     <p className={'mr-3 font-semibold hover:text-white ${buttonClasses}'} >
+     <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
     {children}
     </p>
    </button>

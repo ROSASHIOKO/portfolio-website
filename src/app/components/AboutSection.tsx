@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { FaCode, FaGraduationCap, FaBriefcase } from "react-icons/fa";
+import Image from "next/image";
 
 const AboutSection = () => {
   return (
@@ -9,10 +10,12 @@ const AboutSection = () => {
         <div className="w-full h-full md:ml-4 md:w-5/6 md:h-5/6">
           {/* Image Section */}
           <div className="w-full h-full overflow-hidden rounded-3xl shadow-lg">
-            <img
+            <Image
               src="/images/projects/about.png" // Replace with your actual image path
               alt="About me"
-              className="object-cover w-full h-full"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-3xl shadow-lg"
             />
           </div>
         </div>

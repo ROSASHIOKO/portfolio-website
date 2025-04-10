@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -13,7 +14,7 @@ const HeroSection = () => {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [roles.length]);
 
   return (
     <section className="bg-gray-200">
@@ -55,9 +56,11 @@ const HeroSection = () => {
         {/* Image Section */}
         <div className="sm:col-span-6 px-4 sm:px-8 mb-8 sm:mb-0 sm:ml-4">
           <div className="relative w-[300px] h-[300px] bg-gray-800 rounded-full shadow-xl mx-auto sm:ml-12 flex items-center justify-center">
-            <img
+            <Image
               src="/images/hero-image.png"
               alt="Rosa"
+              width={300}
+              height={300}
               className="object-cover w-[95%] h-[95%] rounded-full"
             />
           </div>
