@@ -27,10 +27,9 @@ const HeroSection = () => {
       <div className="flex flex-col-reverse sm:grid sm:grid-cols-12 sm:items-center">
         {/* Text Section */}
         <div className="sm:col-span-6 text-center sm:text-left px-4 sm:px-8">
-        <h1 className="text-black mb-4 text-4xl sm:text-5xl lg:text-6xl font-semibold">
-          Hello, my name is Rosa welcome to my portfolio.
-       </h1>
-
+          <h1 className="text-black mb-4 text-4xl sm:text-5xl lg:text-6xl font-semibold">
+            Hello, my name is Rosa welcome to my portfolio.
+          </h1>
 
           <div className="text-black text-base sm:text-lg mb-6 lg:text-xl">
             I am a{" "}
@@ -61,13 +60,12 @@ const HeroSection = () => {
 
         {/* Image Section */}
         <div className="sm:col-span-6 px-4 sm:px-8 mb-8 sm:mb-0 sm:ml-4">
-          <div className="relative w-[300px] h-[300px] bg-gray-800 rounded-full shadow-xl mx-auto sm:ml-12 flex items-center justify-center">
+          <div className="relative w-[300px] h-[300px] bg-gray-800 rounded-full shadow-xl mx-auto sm:ml-12 overflow-hidden">
             <Image
               src="/images/hero-image.png"
               alt="Rosa"
-              width={300}
-              height={300}
-              className="object-cover w-[95%] h-[95%] rounded-full"
+              fill
+              className="object-cover rounded-full"
             />
           </div>
         </div>

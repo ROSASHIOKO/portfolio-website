@@ -9,13 +9,12 @@ const AboutSection = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center h-full rounded-3xl">
         <div className="w-full h-full md:ml-4 md:w-5/6 md:h-5/6">
           {/* Image Section */}
-          <div className="w-full h-full overflow-hidden rounded-3xl shadow-lg">
+          <div className="relative w-[500px] h-[500px] overflow-hidden rounded-3xl shadow-lg mx-auto">
             <Image
-              src="/images/projects/about.png" // Replace with your actual image path
+              src="/images/projects/about.png"
               alt="About me"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-3xl shadow-lg"
+              fill
+              className="object-cover rounded-3xl"
             />
           </div>
         </div>
@@ -76,16 +75,16 @@ const AboutSection = () => {
             <FaBriefcase /> Experience
           </h3>
           <p>
-            I have worked on several web development projects, both independently and as part of a team.I have to shout out Swahilipot Hub as 60% of my experince i have gained it here in this organization. My experience includes:
+            I have worked on several web development projects, both independently and as part of a team. I have to shout out Swahilipot Hub as 60% of my experience I have gained it here in this organization. My experience includes:
           </p>
-            <ul className="list-disc pl-6">
+          <ul className="list-disc pl-6">
             <li>Developing responsive websites using React and Next.js</li>
             <li>Building RESTful APIs with Node.js and Express</li>
             <li>Collaborating with designers and developers to create user-friendly interfaces</li>
             <li>Participating in Agile development processes</li>
             <li>Optimizing web applications for performance and scalability</li>
             <li>Using various tech stacks to deliver end-to-end solutions</li>
-            </ul>
+          </ul>
         </div>
       </div>
     </section>
