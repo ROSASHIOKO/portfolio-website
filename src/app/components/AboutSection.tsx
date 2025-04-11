@@ -9,14 +9,15 @@ const AboutSection = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center h-full rounded-3xl">
         <div className="w-full h-full md:ml-4 md:w-5/6 md:h-5/6">
           {/* Image Section */}
-          <div className="relative w-[500px] h-[500px] overflow-hidden rounded-3xl shadow-lg mx-auto">
-            <Image
-              src="/images/projects/about.png"
-              alt="About me"
-              fill
-              className="object-cover rounded-3xl"
-            />
+          <div className="relative w-full max-w-[400px] aspect-square overflow-hidden rounded-3xl shadow-lg mx-auto">
+          <Image
+           alt="About me"
+           fill
+           src="/images/projects/about.png"
+          className="object-cover rounded-3xl"
+           />
           </div>
+
         </div>
 
         <div className="w-3/4 h-auto">
