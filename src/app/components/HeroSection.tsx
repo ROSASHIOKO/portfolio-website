@@ -16,6 +16,12 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, [roles.length]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      console.log("Client-side rendering is active.");
+    }
+  }, []);
+
   return (
     <section className="bg-gray-200">
       <div className="flex flex-col-reverse sm:grid sm:grid-cols-12 sm:items-center">
